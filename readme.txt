@@ -10,7 +10,7 @@ Makes the comment textarea expand in height automatically
 
 == Description ==
 
-Getting comments on your site is one of the most important goals. Long comments tend to be especially valuable.
+Getting comments on your site is one of the most important goals. Longer comments tend to be especially valuable.
 
 However, most comment textareas have a small height, making it difficult to write long comments.
 
@@ -32,6 +32,10 @@ You can either install it automatically from the WordPress admin, or do it manua
 1. Activate the plugin from the Plugins menu.
 
 == Changelog ==
+
+= 1.0.1 =
+* Fixed height issue in IE8
+* Load script only if comments are open
 
 = 1.0 =
 * initial release
