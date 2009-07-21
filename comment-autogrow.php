@@ -23,18 +23,6 @@ You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
 */
 
-#add_action('wp_head', 'firebug');
-
-function firebug()
-{ 
-	if ( !is_single() )
-		return;
-?>
-<script type='text/javascript' src='http://getfirebug.com/releases/lite/1.2/firebug-lite-compressed.js'></script>
-<?php
-}
-
-
 commentAutogrow::init();
 
 class commentAutogrow

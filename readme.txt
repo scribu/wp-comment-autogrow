@@ -34,8 +34,8 @@ You can either install it automatically from the WordPress admin, or do it manua
 == Changelog ==
 
 = 1.0.1 =
-* Fixed height issue in IE8
-* Load script only if comments are open
+* fixed height issue in IE8
+* load script only if comments are open
 
 = 1.0 =
 * initial release
