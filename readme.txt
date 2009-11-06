@@ -22,7 +22,7 @@ This means (s)he can see the entire comment while it's being written, no matter 
 
 You can try it for yourself on the [Plugin's homepage](http://scribu.net/wordpress/comment-autogrow/ca-1-1.html#respond).
 
-It uses the <a href="http://code.google.com/p/jquery-growfield/">Growfield</a> plugin for jQuery.
+It uses the [Growfield](http://code.google.com/p/jquery-growfield/) plugin for jQuery.
 
 == Installation ==
 
