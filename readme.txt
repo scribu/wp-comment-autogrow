@@ -20,7 +20,7 @@ Here's how it works: When a commenter almost fills the textarea, instead of gett
 
 This means (s)he can see the entire comment while it's being written, no matter how long it is.
 
-You can try it for yourself on the [Plugin's homepage](http://scribu.net/wordpress/comment-autogrow/ca-1-0.html#respond).
+You can try it for yourself on the [Plugin's homepage](http://scribu.net/wordpress/comment-autogrow/ca-1-1.html#respond).
 
 It uses the <a href="http://code.google.com/p/jquery-growfield/">Growfield</a> plugin for jQuery.
 
