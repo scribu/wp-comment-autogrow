@@ -42,7 +42,7 @@ class commentAutogrow
 
 		$url = plugin_dir_url(__FILE__);
 
-		wp_enqueue_script('growfield', $url . 'growfield.js', array('jquery'), '1.2.5', true);
+		wp_enqueue_script('growfield', $url . 'growfield.js', array('jquery'), '2', true);
 	}
 	
 	function init_js()
