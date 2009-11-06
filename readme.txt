@@ -16,13 +16,13 @@ However, most comment textareas have a small height, making it difficult to writ
 
 *Enter Autogrow*
 
-Autogrow is a small piece of JavaScript, originally written by [Chrys Bader](http://www.chrysbader.com).
-
 Here's how it works: When a commenter almost fills the textarea, instead of getting a scrollbar, the textarea grows in height.
 
 This means (s)he can see the entire comment while it's being written, no matter how long it is.
 
 You can try it for yourself on the [Plugin's homepage](http://scribu.net/wordpress/comment-autogrow/ca-1-0.html#respond).
+
+It uses the <a href="http://code.google.com/p/jquery-growfield/">Growfield</a> plugin for jQuery.
 
 == Installation ==
 
