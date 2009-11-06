@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Comment Autogrow
-Version: 1.1a
+Version: 1.1
 Description: Makes the comment textarea expand in height automatically
 Author: scribu
 Author URI: http://scribu.net

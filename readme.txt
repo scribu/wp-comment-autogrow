@@ -2,8 +2,8 @@
 Contributors: scribu
 Donate link: http://scribu.net/wordpress
 Tags: comments, javascript, autogrow
-Requires at least: 2.3
-Tested up to: 2.8
+Requires at least: 2.8
+Tested up to: 2.9-rare
 Stable tag: trunk
 
 Makes the comment textarea expand in height automatically
@@ -32,6 +32,11 @@ You can either install it automatically from the WordPress admin, or do it manua
 1. Activate the plugin from the Plugins menu.
 
 == Changelog ==
+
+= 1.1 =
+* replace Autogrow library with Growfield2
+* compress javascript
+* [more info](http://scribu.net/wordpress/comment-autogrow/ca-1-1.html)
 
 = 1.0.1 =
 * fixed height issue in IE8
