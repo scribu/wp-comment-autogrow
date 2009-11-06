@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Comment Autogrow
-Version: 1.0.1
+Version: 1.1a
 Description: Makes the comment textarea expand in height automatically
 Author: scribu
 Author URI: http://scribu.net
@@ -30,6 +30,7 @@ class commentAutogrow
 	function init()
 	{
 		add_action('template_redirect', array(__CLASS__, 'script'));
+		add_action('wp_footer', array(__CLASS__, 'init_js'), 20);
 	}
 
 	function script()
@@ -39,21 +40,18 @@ class commentAutogrow
 		if ( !$cond )
 			return;
 
-		$url = plugins_dir_url(__FILE__);
+		$url = plugin_dir_url(__FILE__);
 
-		wp_register_script('autogrow', $url . 'autogrow.js', array('jquery'), '1.2.5', true);
-		wp_enqueue_script('comment-autogrow', $url . 'init.js', array('autogrow'), '1.0.1', true);
+		wp_enqueue_script('growfield', $url . 'growfield.js', array('jquery'), '1.2.5', true);
+	}
+	
+	function init_js()
+	{
+?>
+<script type="text/javascript">
+jQuery().ready(function($){	$('#comment').growfield(); });
+</script>
+<?php
 	}
 }
-
-// WP < 2.8
-if ( !function_exists('plugins_dir_url') ) :
-function plugins_dir_url($file) {
-	// WP < 2.7
-	if ( !function_exists('plugins_url') )
-		return trailingslashit(get_option('siteurl') . '/wp-content/plugins/' . plugin_basename($file));
-
-	return trailingslashit(plugins_url(plugin_basename(dirname($file))));
-}
-endif;
 
