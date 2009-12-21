@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Comment Autogrow
-Version: 1.1
+Version: 1.1.1
 Description: Makes the comment textarea expand in height automatically
 Author: scribu
 Author URI: http://scribu.net
@@ -23,35 +23,35 @@ You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
 */
 
-commentAutogrow::init();
+Comment_Autogrow::init();
 
-class commentAutogrow
-{
-	function init()
-	{
-		add_action('template_redirect', array(__CLASS__, 'script'));
-		add_action('wp_footer', array(__CLASS__, 'init_js'), 20);
+class Comment_Autogrow {
+
+	function init() {
+		add_action('template_redirect', array(__CLASS__, 'add_script'));
+		add_action('wp_footer', array(__CLASS__, 'init_script'), 20);
 	}
 
-	function script()
-	{
-		$cond = ( is_single() || is_page() ) && $GLOBALS['post']->comment_status == 'open';
-
-		if ( !$cond )
+	function add_script() {
+		if ( ! self::needed() )
 			return;
 
-		$url = plugin_dir_url(__FILE__);
-
-		wp_enqueue_script('growfield', $url . 'growfield.js', array('jquery'), '2', true);
+		wp_enqueue_script('growfield', plugins_url('growfield.js', __FILE__), array('jquery'), '2', true);
 	}
-	
-	function init_js()
-	{
+
+	function init_script() {
+		if ( ! self::needed() )
+			return;
+
 ?>
 <script type="text/javascript">
-jQuery().ready(function($){	$('#comment').growfield(); });
+jQuery(document).ready(function($){	$('#comment').growfield(); });
 </script>
 <?php
+	}
+
+	function needed() {
+		return is_singular() && $GLOBALS['post']->comment_status == 'open';
 	}
 }
 
