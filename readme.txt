@@ -3,7 +3,7 @@ Contributors: scribu
 Donate link: http://scribu.net/wordpress
 Tags: comments, javascript, autogrow
 Requires at least: 2.8
-Tested up to: 2.9
+Tested up to: 3.0
 Stable tag: trunk
 
 Makes the comment textarea expand in height automatically
