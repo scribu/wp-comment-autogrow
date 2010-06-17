@@ -7,7 +7,7 @@ Author: scribu
 Author URI: http://scribu.net
 Plugin URI: http://scribu.net/wordpress/comment-autogrow
 
-Copyright (C) 2009 scribu.net (scribu AT gmail DOT com)
+Copyright (C) 2010 scribu.net (scribu AT gmail DOT com)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
