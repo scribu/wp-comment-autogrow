@@ -33,6 +33,9 @@ You can either install it automatically from the WordPress admin, or do it manua
 
 == Changelog ==
 
+= 1.1.2 =
+* WP 3.0.1 compatibility
+
 = 1.1.1 =
 * don't start script if it's not loaded
 
