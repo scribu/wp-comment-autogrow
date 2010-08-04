@@ -31,6 +31,16 @@ You can either install it automatically from the WordPress admin, or do it manua
 1. Unzip "comment-autogrow" archive and put the folder into your plugins folder (/wp-content/plugins/).
 1. Activate the plugin from the Plugins menu.
 
+== Frequently Asked Questions ==
+
+= It doesn't work =
+
+First, make sure your theme has this line somewhere in footer.php:
+
+`wp_footer();`
+
+Next, check for JavaScript errors (In Firefox, press Ctrl + Shift + J and reload the page).
+
 == Changelog ==
 
 = 1.1.2 =
