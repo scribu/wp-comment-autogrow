@@ -24,6 +24,8 @@ You can try it for yourself on the [Plugin's homepage](http://scribu.net/wordpre
 
 It uses the [Growfield](http://code.google.com/p/jquery-growfield/) plugin for jQuery.
 
+Links: [Plugin News](http://scribu.net/wordpress/comment-autogrow) | [Author's site](http://scribu.net)
+
 == Installation ==
 
 You can either install it automatically from the WordPress admin, or do it manually:
