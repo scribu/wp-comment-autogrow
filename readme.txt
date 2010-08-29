@@ -16,9 +16,7 @@ However, most comment textareas have a small height, making it difficult to writ
 
 *Enter Autogrow*
 
-Here's how it works: When a commenter almost fills the textarea, instead of getting a scrollbar, the textarea grows in height.
-
-This means (s)he can see the entire comment while it's being written, no matter how long it is.
+Here's how it works: When a commenter almost fills the textarea, instead of getting a scrollbar, the textarea grows in height. This means they can see the entire comment while it's being written, no matter how long it is.
 
 It uses the [Growfield](http://code.google.com/p/jquery-growfield/) plugin for jQuery.
 
