@@ -22,13 +22,6 @@ It uses the [Growfield](http://code.google.com/p/jquery-growfield/) plugin for j
 
 Links: [Demo](http://scribu.net/wordpress/comment-autogrow/ca-1-1.html#respond) | [Plugin News](http://scribu.net/wordpress/comment-autogrow) | [Author's Site](http://scribu.net)
 
-== Installation ==
-
-You can either install it automatically from the WordPress admin, or do it manually:
-
-1. Unzip "comment-autogrow" archive and put the folder into your plugins folder (/wp-content/plugins/).
-1. Activate the plugin from the Plugins menu.
-
 == Frequently Asked Questions ==
 
 = It doesn't work =
