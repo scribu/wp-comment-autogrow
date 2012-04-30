@@ -6,8 +6,6 @@ Description: Makes the comment textarea expand in height automatically
 Author: scribu
 Author URI: http://scribu.net
 Plugin URI: http://scribu.net/wordpress/comment-autogrow
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
 Comment_Autogrow::init();
